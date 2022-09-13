@@ -70,6 +70,7 @@ body{
 .card:hover{
    
     background-color: #f8f7f7;
+    transform: translateY(10px);
 }
 
 
