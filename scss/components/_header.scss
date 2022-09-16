@@ -1,0 +1,16 @@
+.titulo{
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient( #B75AE6, rgb(26, 26, 26));
+    padding: 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    border-bottom: 5px solid rgba(180, 38, 236, 0.021);
+    text-align: center;
+}
+
+.index{
+    background-color: #2c2727;
+}

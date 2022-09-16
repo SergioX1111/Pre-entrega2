@@ -1,0 +1,14 @@
+{
+  "name": "proyecto-sass",
+  "version": "1.0.0",
+  "description": "practica de sass",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "author": "Sergio Veron",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

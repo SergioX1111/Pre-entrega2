@@ -1,0 +1,43 @@
+.footer{
+   
+
+    margin-top: 15px;
+
+    color: $color2;
+  
+    background-color: $color1;
+
+    padding: 50px 20px;
+
+    &__content{
+      align-items: center;
+
+      &__list{
+        text-decoration: none;
+
+        font-size: x-large;
+        
+       
+      }
+    }
+
+   
+   
+   &__rrss{
+   
+    margin-top: 30px;
+    
+    }
+    .rs-#{all} {
+        display: flex;
+        align-items: flex-end;
+    }
+   
+}
+
+.copy{
+    margin-top: 40px;
+    text-align: center;
+    color: black;
+    font-size: x-large;
+}
