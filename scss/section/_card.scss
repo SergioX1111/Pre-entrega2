@@ -26,7 +26,7 @@
         &-tag{
             padding: 12px;
             color: #000;
-            background-color: #B75AE6;
+            background-color: $color1;
             position: absolute;
             right: 0;
             border-left-width: 10px;
@@ -38,7 +38,7 @@
         }
     }
     &__link{
-        background-color: #B75AE6;
+        background-color: $color1;
     display: inline-block;
     width: 100%;
     padding: 15px;
@@ -73,13 +73,12 @@
         margin-bottom: 60px;
         text-align: center;
         font-size: 30px;
-        color: #B75AE6;
+        color: $color1;
         border: rgb(0, 0, 0 ) solid;
-        background-color: #eee;
+        background-color: $color2;
     }
     &__contenedor{
-        display: grid;
-        grid-template-columns: repeat(3, 2fr);
+        @include grid(3);
     }
 }
 
