@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemps: https://github.com/SergioX1111/Pre-entrega2/Sitemps.xml
