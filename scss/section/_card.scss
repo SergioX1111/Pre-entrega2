@@ -1,31 +1,31 @@
 .card {
     background-color: #ffffff;
     padding: 20px;
-    width: 400px;
+    width: 350px;
     border-radius: 10px;
     box-shadow: 0 25px 50px -12px rgb(0, 0, 0 );
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     transition: 0.5s;
 
     &__tittle{
         background-color: rgba(155, 12, 238, 0.904);
         color:  ghostwhite;
-        padding: 10px;
-        border-radius: 10px;
+        padding: 8px;
+        border-radius: 8px;
     }
 
     &__description{
-        padding: 10px;
-        margin: 10px;
-        font-size: 16px;
+        padding: 8px;
+        margin: 8px;
+        font-size: 15px;
     }
     &__header{
         position: relative;
 
         &-tag{
-            padding: 12px;
-            color: #000;
+            padding: 10px;
+            color: $color3;
             background-color: $color1;
             position: absolute;
             right: 0;
@@ -34,14 +34,14 @@
         &-img{
             width: 300px;
             height: 350px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
     }
     &__link{
         background-color: $color1;
     display: inline-block;
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     color: azure;
     cursor: pointer;
@@ -65,14 +65,14 @@
 }
 
 .productos{
-    margin-top: 60px;
-    padding: 0 20px;
+    margin-top: 50px;
+    padding: 0 15px;
 
     &__Ampli{
-        margin-top: 50px;
-        margin-bottom: 60px;
+        margin-top: 40px;
+        margin-bottom: 50px;
         text-align: center;
-        font-size: 30px;
+        font-size: 20px;
         color: $color1;
         border: rgb(0, 0, 0 ) solid;
         background-color: $color2;

@@ -10,12 +10,27 @@
     padding: 50px 20px;
 
     &__content{
+      
+      color: $color3;
       align-items: center;
+      @include grid(3);
 
       &__list{
         text-decoration: none;
 
-        font-size: x-large;
+        li{
+           max-width: 10px 0;
+
+           
+        }
+        a{
+          color: $color2;
+          transition: 0,5s;
+          &:hover{
+            color: $color3;
+          }
+        }
+
         
        
       }
@@ -26,14 +41,45 @@
    &__rrss{
    
     margin-top: 30px;
+
+    @include grid(3);
+
+    $Iconos: (
+      facebook: #2279e4,
+      twitter: #55acee,
+      instagram: #e263cd,
+
+
+      
+    );
+
+    @each $nameicons, $coloricons in $Iconos {
+      .rs-#{$nameicons} {
+        color: $color3;
+        font-size: 30px;
+        transition: 0.5s;
+
+        &:hover{
+          color: $coloricons;
+          
+        }
+
+      }
+    }
+    
+
+  
+
     
     }
-    .rs-#{all} {
-        display: flex;
-        align-items: flex-end;
-    }
+   
    
 }
+a {
+  text-decoration: none;
+}
+
+
 
 .copy{
     margin-top: 40px;
