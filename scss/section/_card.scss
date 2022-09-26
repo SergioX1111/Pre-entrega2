@@ -69,13 +69,7 @@
     padding: 0 15px;
 
     &__Ampli{
-        margin-top: 40px;
-        margin-bottom: 50px;
-        text-align: center;
-        font-size: 20px;
-        color: $color1;
-        border: rgb(0, 0, 0 ) solid;
-        background-color: $color2;
+        @extend .fondo;
     }
     &__contenedor{
         @include grid(3);
@@ -83,14 +77,14 @@
 }
 
 
-@media (max-width: 1265px ){
+@media (max-width: $firstc ){
     .productos__contenedor{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 
-@media (max-width: 992px ){
+@media (max-width: $secondc ){
     .productos__contenedor{
         grid-template-columns: repeat(1, 1fr);
     }

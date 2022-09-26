@@ -18,6 +18,9 @@ header {
 li {
   list-style-type: none; }
 
+a {
+  text-decoration: none; }
+
 body {
   background-color: rgba(83, 83, 83, 0.863);
   display: block; }
@@ -26,6 +29,15 @@ img {
   width: 300px;
   height: 350px;
   margin-bottom: 20px; }
+
+.fondo, .productos__Ampli {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: #B75AE6;
+  border: black solid;
+  background-color: #eee; }
 
 .titulo {
   position: sticky;
@@ -53,10 +65,14 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 2fr); }
     .footer__content__list {
-      text-decoration: none; }
+      color: #000;
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(3, 2fr); }
       .footer__content__list li {
-        max-width: 10px 0; }
+        max-width: 300px 10; }
       .footer__content__list a {
+        font-weight: bold;
         color: #eee;
         transition: 0,5s; }
         .footer__content__list a:hover {
@@ -68,24 +84,33 @@ img {
     .footer__rrss .rs-facebook {
       color: #000;
       font-size: 30px;
-      transition: 0.5s; }
+      transition: 0.5s;
+      margin: 0 auto;
+      padding: 10px;
+      border-radius: 30px; }
       .footer__rrss .rs-facebook:hover {
-        color: #2279e4; }
+        color: #2279e4;
+        background-color: #000; }
     .footer__rrss .rs-twitter {
       color: #000;
       font-size: 30px;
-      transition: 0.5s; }
+      transition: 0.5s;
+      margin: 0 auto;
+      padding: 10px;
+      border-radius: 30px; }
       .footer__rrss .rs-twitter:hover {
-        color: #55acee; }
+        color: #55acee;
+        background-color: #000; }
     .footer__rrss .rs-instagram {
       color: #000;
       font-size: 30px;
-      transition: 0.5s; }
+      transition: 0.5s;
+      margin: 0 auto;
+      padding: 10px;
+      border-radius: 30px; }
       .footer__rrss .rs-instagram:hover {
-        color: #e263cd; }
-
-a {
-  text-decoration: none; }
+        color: #e263cd;
+        background-color: #000; }
 
 .copy {
   margin-top: 40px;
@@ -145,14 +170,6 @@ a {
 .productos {
   margin-top: 50px;
   padding: 0 15px; }
-  .productos__Ampli {
-    margin-top: 40px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 20px;
-    color: #B75AE6;
-    border: black solid;
-    background-color: #eee; }
   .productos__contenedor {
     display: grid;
     grid-template-columns: repeat(3, 2fr); }

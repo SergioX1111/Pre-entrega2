@@ -12,27 +12,37 @@
     &__content{
       
       color: $color3;
+
       align-items: center;
+
       @include grid(3);
 
       &__list{
-        text-decoration: none;
+        color: $color3;
+
+        align-items: center;
+
+        @include grid(3);
+        
 
         li{
-           max-width: 10px 0;
+           max-width: 300px 10;
 
            
         }
         a{
+
+          font-weight: bold;
+          
           color: $color2;
+
           transition: 0,5s;
+         
           &:hover{
             color: $color3;
+
           }
         }
-
-        
-       
       }
     }
 
@@ -45,45 +55,55 @@
     @include grid(3);
 
     $Iconos: (
-      facebook: #2279e4,
+      
+    facebook: #2279e4,
+
       twitter: #55acee,
+
       instagram: #e263cd,
-
-
       
     );
 
-    @each $nameicons, $coloricons in $Iconos {
-      .rs-#{$nameicons} {
+    @each $nameiconos, $coloriconos in $Iconos {
+      .rs-#{$nameiconos} {
         color: $color3;
+
         font-size: 30px;
+
         transition: 0.5s;
 
+        margin: 0 auto;
+
+        padding: 10px;
+
+        border-radius: 30px;
+
+
         &:hover{
-          color: $coloricons;
+          color: $coloriconos;
+
+          background-color: $color3;
+
+          
           
         }
 
       }
     }
-    
-
-  
-
-    
-    }
-   
+  }   
    
 }
-a {
-  text-decoration: none;
-}
+
+
 
 
 
 .copy{
     margin-top: 40px;
+
     text-align: center;
+
     color: black;
+
     font-size: x-large;
 }
