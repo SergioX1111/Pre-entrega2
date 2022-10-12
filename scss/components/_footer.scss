@@ -1,5 +1,6 @@
-.footer{
-   
+@import "./variables";
+
+.footer{ 
 
     margin-top: 15px;
 
@@ -23,26 +24,8 @@
         align-items: center;
 
         @include grid(3);
+  
         
-
-        li{
-           max-width: 300px 10;
-
-           
-        }
-        a{
-
-          font-weight: bold;
-          
-          color: $color2;
-
-          transition: 0,5s;
-         
-          &:hover{
-            color: $color3;
-
-          }
-        }
       }
     }
 
@@ -56,11 +39,11 @@
 
     $Iconos: (
       
-    facebook: #2279e4,
+     facebook: #2279e4,
 
-      twitter: #55acee,
+     twitter: #55acee,
 
-      instagram: #e263cd,
+     instagram: #e263cd,
       
     );
 
@@ -94,6 +77,31 @@
    
 }
 
+.link{
+  list-style-type: none;
+
+  max-width: 300px 10; 
+
+  &{
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: large;
+    
+    color: $color2;
+  
+    transition: 0,3s;
+   
+    &:hover{
+      color: $color3;
+  
+      background-color: $color2;
+  
+    }
+  }
+}
+
 
 
 
@@ -106,4 +114,6 @@
     color: black;
 
     font-size: x-large;
+
+    font-weight: bold;
 }
