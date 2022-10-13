@@ -176,14 +176,13 @@ img {
     transform: translateY(10px); }
 
 .card1 {
-  align-items: center;
-  margin: auto;
+  margin: 0 auto;
   background-color: #ffffff;
   padding: 10px;
   width: 950px;
   border-radius: 10px;
   box-shadow: 0 25px 50px -12px black;
-  transition: 0.5s; }
+  border-bottom: 15px; }
   .card1__tittle {
     text-align: center;
     text-decoration: none;
@@ -197,7 +196,10 @@ img {
     margin: 8px;
     font-size: 15px; }
   .card1__header {
-    position: relative; }
+    position: relative;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto; }
     .card1__header-tag {
       padding: 10px;
       color: #000;
@@ -208,7 +210,7 @@ img {
     .card1__header-img {
       margin: 0 auto;
       width: 200px;
-      height: 250px;
+      height: 20px;
       margin-bottom: 10px; }
   .card1__link {
     text-decoration: none;
@@ -225,6 +227,58 @@ img {
       background-color: #b75ae6c4;
       color: #000; }
 
+.card2 {
+  border-top: 200px;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 10px;
+  width: 550px;
+  border-radius: 10px; }
+  .card2__tittle {
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(155, 12, 238, 0.904);
+    color: ghostwhite;
+    padding: 8px;
+    border-radius: 8px; }
+  .card2__description {
+    font-weight: bold;
+    padding: 8px;
+    margin: 8px;
+    font-size: 15px; }
+  .card2__header {
+    position: relative;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto; }
+    .card2__header-tag {
+      padding: 10px;
+      color: #000;
+      background-color: #b75ae6c4;
+      position: absolute;
+      right: 0;
+      border-left-width: 10px; }
+    .card2__header-img {
+      margin: 0 auto;
+      width: 200px;
+      height: 250px;
+      margin-bottom: 10px; }
+  .card2__link {
+    text-decoration: none;
+    background-color: #eee;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold; }
+    .card2__link:hover {
+      background-color: #b75ae6c4;
+      color: #000; }
+
 .titulo__principal--listas {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #ffffff; }
@@ -232,7 +286,10 @@ img {
 .productos {
   margin: auto;
   margin-top: 50px;
-  padding: 0 15px; }
+  padding: 0 15px;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto; }
   .productos__contenedor {
     display: grid;
     grid-template-columns: repeat(3, 2fr); }

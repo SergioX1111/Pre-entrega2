@@ -67,14 +67,14 @@
 }
 
 .card1{
-    align-items: center;
-    margin: auto;   
+
+    margin: 0 auto;   
     background-color: #ffffff;
     padding: 10px;
     width: 950px;
     border-radius: 10px;
     box-shadow: 0 25px 50px -12px rgb(0, 0, 0 );
-    transition: 0.5s;
+    border-bottom: 15px;
 
     &__tittle{
         text-align: center;
@@ -93,6 +93,9 @@
     }
     &__header{
         position: relative;
+        align-content: center;
+        align-items: center;
+        margin: 0 auto; 
 
         &-tag{
             padding: 10px;
@@ -103,6 +106,72 @@
             border-left-width: 10px;
         }
         &-img{
+            margin: 0 auto;
+            width: 200px;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        background-color: $color2;
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        color: $color3;
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight: bold;
+    
+        &:hover{
+            background-color: $color1;
+            color: $color3;
+        }
+        }
+
+}
+
+.card2{
+    border-top: 200px;
+    align-items: center;
+    margin: 0 auto;   
+    background-color: #ffffff;
+    padding: 10px;
+    width: 550px;
+    border-radius: 10px;
+
+    &__tittle{
+        text-align: center;
+        text-decoration: none;
+        background-color: rgba(155, 12, 238, 0.904);
+        color:  ghostwhite;
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    &__description{
+        font-weight: bold;
+        padding: 8px;
+        margin: 8px;
+        font-size: 15px;
+    }
+    &__header{
+        position: relative;
+        align-content: center;
+        align-items: center;
+        margin: 0 auto; 
+
+        &-tag{
+            padding: 10px;
+            color: $color3;
+            background-color: $color1;
+            position: absolute;
+            right: 0;
+            border-left-width: 10px;
+        }
+        &-img{
+
             margin: 0 auto;
             width: 200px;
             height: 250px;
@@ -130,6 +199,7 @@
 }
 
 
+
 .titulo__principal--listas{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #ffffff;
@@ -139,15 +209,19 @@
     margin: auto;
     margin-top: 50px;
     padding: 0 15px;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto; 
 
     &__Ampli{
         @extend .fondo;
     }
     &__contenedor{
         @include grid(3);
+        
+        
     }
 }
-
 
 @media (max-width: $firstc ){
     .productos__contenedor{
