@@ -59,7 +59,7 @@
 
         padding: 10px;
 
-        border-radius: 30px;
+        border-radius: 50%;
 
 
         &:hover{
@@ -116,4 +116,28 @@
     font-size: x-large;
 
     font-weight: bold;
+}
+
+@media (max-width: $firstc ){
+  .footer__content{
+      grid-template-columns: repeat(2, 1fr);
+      padding: 10, auto;
+  }
+  .link{
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: $secondc ){
+  .footer__content{
+      grid-template-columns: repeat(1, 1fr);
+      padding: 10, auto;
+  }
+  .link{
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
 }

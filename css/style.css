@@ -30,7 +30,7 @@ img {
   height: 250px;
   margin-bottom: 20px; }
 
-.fondo, .productos__Ampli {
+.fondo, .productos__Ampli, .row g-3 {
   margin-top: 40px;
   margin-bottom: 50px;
   text-align: center;
@@ -79,7 +79,7 @@ img {
       transition: 0.5s;
       margin: 0 auto;
       padding: 10px;
-      border-radius: 30px; }
+      border-radius: 50%; }
       .footer__rrss .rs-facebook:hover {
         color: #2279e4;
         background-color: #000; }
@@ -89,7 +89,7 @@ img {
       transition: 0.5s;
       margin: 0 auto;
       padding: 10px;
-      border-radius: 30px; }
+      border-radius: 50%; }
       .footer__rrss .rs-twitter:hover {
         color: #55acee;
         background-color: #000; }
@@ -99,7 +99,7 @@ img {
       transition: 0.5s;
       margin: 0 auto;
       padding: 10px;
-      border-radius: 30px; }
+      border-radius: 50%; }
       .footer__rrss .rs-instagram:hover {
         color: #e263cd;
         background-color: #000; }
@@ -123,6 +123,22 @@ img {
   color: black;
   font-size: x-large;
   font-weight: bold; }
+
+@media (max-width: 1265px) {
+  .footer__content {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10, auto; }
+  .link {
+    margin-top: 15px;
+    margin-bottom: 10px; } }
+
+@media (max-width: 992px) {
+  .footer__content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10, auto; }
+  .link {
+    margin-top: 15px;
+    margin-bottom: 10px; } }
 
 .card {
   margin: 0 auto;
@@ -229,7 +245,9 @@ img {
 
 .card2 {
   border-top: 200px;
+  display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
   background-color: #ffffff;
   padding: 10px;
@@ -293,6 +311,33 @@ img {
   .productos__contenedor {
     display: grid;
     grid-template-columns: repeat(3, 2fr); }
+
+.row g-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr); }
+
+.img1 {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  display: grid;
+  width: 150px;
+  height: 150px; }
+
+.botton {
+  background-color: #eee;
+  font-size: larger;
+  color: #b75ae6c4;
+  transition: 0.3; }
+  .botton:hover {
+    translate: 5px;
+    color: #eee;
+    background-color: #b75ae6c4; }
+
+.card3__header {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0, auto; }
 
 @media (max-width: 1265px) {
   .productos__contenedor {
